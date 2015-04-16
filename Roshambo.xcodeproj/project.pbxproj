@@ -13,6 +13,7 @@
 		87E5ED361ADFD9A100B101AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E5ED351ADFD9A100B101AD /* Images.xcassets */; };
 		87E5ED391ADFD9A200B101AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E5ED371ADFD9A200B101AD /* LaunchScreen.xib */; };
 		87E5ED451ADFD9A200B101AD /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5ED441ADFD9A200B101AD /* RoshamboTests.swift */; };
+		87E5ED4F1ADFDC2F00B101AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5ED4E1ADFDC2F00B101AD /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		87E5ED3E1ADFD9A200B101AD /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E5ED431ADFD9A200B101AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E5ED441ADFD9A200B101AD /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
+		87E5ED4E1ADFDC2F00B101AD /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				87E5ED2E1ADFD9A100B101AD /* AppDelegate.swift */,
 				87E5ED301ADFD9A100B101AD /* ViewController.swift */,
+				87E5ED4E1ADFDC2F00B101AD /* ResultViewController.swift */,
 				87E5ED321ADFD9A100B101AD /* Main.storyboard */,
 				87E5ED351ADFD9A100B101AD /* Images.xcassets */,
 				87E5ED371ADFD9A200B101AD /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				87E5ED311ADFD9A100B101AD /* ViewController.swift in Sources */,
 				87E5ED2F1ADFD9A100B101AD /* AppDelegate.swift in Sources */,
+				87E5ED4F1ADFDC2F00B101AD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
