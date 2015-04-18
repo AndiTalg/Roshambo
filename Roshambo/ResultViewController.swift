@@ -12,23 +12,31 @@ import UIKit
 
 
 class ResultViewController: UIViewController {
-    
-    var userSelection: Int?
-    var deviceSelection: Int?
-    
-    @IBOutlet weak var resultImage: UIImageView!
-    @IBOutlet weak var resultText: UILabel!
-    
-    override func viewWillAppear(animated: Bool) {
-        // code
-        println("\(self.userSelection)")
+  
+  var userSelection: RPSType?
+  var deviceSelection: RPSType?
+  
+  @IBOutlet weak var resultImage: UIImageView!
+  @IBOutlet weak var resultText: UILabel!
+  
+  override func viewWillAppear(animated: Bool) {
+    // code
+    println("\(self.userSelection)")
+    switch userSelection! {
+    case RPSType.Rock :
+      resultImage.image = UIImage(named: "RockCrushesScissors")
+    default :
+      resultImage.image = UIImage(named: "RockCrushesScissors")
     }
     
-    override func viewDidLoad() {
-        // Show pictures
-    }
-    
-    @IBAction func playAgain(sender: UIButton) {
-    }
-    
+  }
+  
+  override func viewDidLoad() {
+    // Show pictures
+  }
+  
+  @IBAction func playAgain(sender: UIButton) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
 }

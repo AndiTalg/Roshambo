@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CB9661C1AE27A6100AB8E64 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9661B1AE27A6100AB8E64 /* RPS.swift */; };
 		87E5ED2F1ADFD9A100B101AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5ED2E1ADFD9A100B101AD /* AppDelegate.swift */; };
 		87E5ED311ADFD9A100B101AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5ED301ADFD9A100B101AD /* ViewController.swift */; };
 		87E5ED341ADFD9A100B101AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E5ED321ADFD9A100B101AD /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CB9661B1AE27A6100AB8E64 /* RPS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
 		87E5ED291ADFD9A100B101AD /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E5ED2D1ADFD9A100B101AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E5ED2E1ADFD9A100B101AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				87E5ED2E1ADFD9A100B101AD /* AppDelegate.swift */,
+				3CB9661B1AE27A6100AB8E64 /* RPS.swift */,
 				87E5ED301ADFD9A100B101AD /* ViewController.swift */,
 				87E5ED4E1ADFDC2F00B101AD /* ResultViewController.swift */,
 				87E5ED321ADFD9A100B101AD /* Main.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E5ED311ADFD9A100B101AD /* ViewController.swift in Sources */,
+				3CB9661C1AE27A6100AB8E64 /* RPS.swift in Sources */,
 				87E5ED2F1ADFD9A100B101AD /* AppDelegate.swift in Sources */,
 				87E5ED4F1ADFDC2F00B101AD /* ResultViewController.swift in Sources */,
 			);
@@ -413,6 +417,7 @@
 				87E5ED4A1ADFD9A200B101AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87E5ED4B1ADFD9A200B101AD /* Build configuration list for PBXNativeTarget "RoshamboTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				87E5ED4D1ADFD9A200B101AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
