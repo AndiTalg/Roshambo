@@ -21,18 +21,27 @@
                                 <state key="normal" image="rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectRock:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jrY-vM-kum"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVo-sm-mfw">
                                 <rect key="frame" x="150" y="84" width="75" height="65"/>
                                 <state key="normal" image="paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sf5-QC-sl4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-UH-aTi">
                                 <rect key="frame" x="238" y="236" width="75" height="65"/>
                                 <state key="normal" image="scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectScissors:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CW7-gh-lsP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's play!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-YR-DAp">
                                 <rect key="frame" x="142" y="399" width="90" height="24"/>
@@ -74,11 +83,18 @@
                                 <state key="normal" title="Play again!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="Wdj-34-BZ4" eventType="touchUpInside" id="DeN-fG-ygj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resultImage" destination="x3Z-ss-IZ1" id="FS1-T8-3Fe"/>
+                        <outlet property="resultText" destination="Wqr-kL-hZE" id="ZhZ-OS-jyh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDM-fi-Ns3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

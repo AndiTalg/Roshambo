@@ -20,6 +20,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func randomSelection () -> Int{
+        let val = arc4random_uniform(3) + 1
+        return Int(val)
+    }
 
+    // Rock -> only code version
+    @IBAction func selectRock(sender: UIButton) {
+        
+        var resultController: ResultViewController
+        
+        resultController = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        
+        resultController.userSelection = randomSelection()
+        resultController.deviceSelection = randomSelection()
+        
+        presentViewController(resultController, animated: true, completion: nil)
+    }
+    
+    @IBAction func selectScissors(sender: UIButton) {
+        
+    }
+    
+    @IBAction func selectPaper(sender: UIButton) {
+        println("Wert : \(randomSelection())")
+    }
 }
 
