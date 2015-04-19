@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     resultController = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
     
-    resultController.userSelection = randomSelection()
+    resultController.userSelection = RPSType.Rock
     resultController.deviceSelection = randomSelection()
     
     presentViewController(resultController, animated: true, completion: nil)

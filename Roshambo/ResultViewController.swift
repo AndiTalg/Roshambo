@@ -21,12 +21,46 @@ class ResultViewController: UIViewController {
   
   override func viewWillAppear(animated: Bool) {
     // code
-    println("\(self.userSelection)")
+
     switch userSelection! {
     case RPSType.Rock :
-      resultImage.image = UIImage(named: "RockCrushesScissors")
+        switch self.deviceSelection! {
+        case RPSType.Scissors :
+          resultImage.image = UIImage(named: "RockCrushesScissors")
+          resultText.text = "Rock crushes scissors : you win!"
+        case RPSType.Paper :
+          resultImage.image = UIImage(named: "PaperCoversRock")
+          resultText.text = "Paper covers rock : you loose!"
+        default :
+          resultImage.image = UIImage(named: "itsATie")
+          resultText.text = "Rock on Rock : it's a tie!"
+        }
+    case RPSType.Paper :
+        switch self.deviceSelection! {
+        case RPSType.Scissors :
+            resultImage.image = UIImage(named: "ScissorsCutPaper")
+            resultText.text = "Scissors cut paper : you loose!"
+        case RPSType.Rock :
+            resultImage.image = UIImage(named: "PaperCoversRock")
+            resultText.text = "Paper covers rock : you win!"
+        default :
+            resultImage.image = UIImage(named: "itsATie")
+            resultText.text = "Paper on paper : it's a tie!"
+        }
+    case RPSType.Scissors :
+        switch self.deviceSelection! {
+        case RPSType.Paper :
+            resultImage.image = UIImage(named: "ScissorsCutPaper")
+            resultText.text = "Scissors cut paper : you win!"
+        case RPSType.Rock :
+            resultImage.image = UIImage(named: "RockCrushesScissors")
+            resultText.text = "Rock crushes scissors : you loose!"
+        default :
+            resultImage.image = UIImage(named: "itsATie")
+            resultText.text = "Scissors on Scissors : it's a tie!"
+        }
     default :
-      resultImage.image = UIImage(named: "RockCrushesScissors")
+      assert(false, "Error!")
     }
     
   }
