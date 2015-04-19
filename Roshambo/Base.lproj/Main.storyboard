@@ -32,6 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="selectPaper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sf5-QC-sl4"/>
+                                    <segue destination="Wdj-34-BZ4" kind="show" identifier="playPaper" id="dZN-Ri-qRS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-UH-aTi">

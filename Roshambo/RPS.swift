@@ -13,3 +13,15 @@ enum RPSType {
   case Rock, Paper, Scissors
   
 }
+
+func randomSelection () -> RPSType {
+    
+    let val = arc4random_uniform(3) + 1
+    
+    switch val {
+    case 1 : return RPSType.Paper
+    case 2 : return RPSType.Rock
+    case 3 : return RPSType.Scissors
+    default : return RPSType.Rock
+    }
+}

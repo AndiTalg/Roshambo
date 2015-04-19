@@ -20,18 +20,6 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  func randomSelection () -> RPSType {
-    
-    let val = arc4random_uniform(3) + 1
-    
-    switch val {
-    case 1 : return RPSType.Paper
-    case 2 : return RPSType.Rock
-    case 3 : return RPSType.Scissors
-    default : return RPSType.Rock
-    }
-  }
-  
   // Rock -> only code version
   @IBAction func selectRock(sender: UIButton) {
     
@@ -44,13 +32,22 @@ class ViewController: UIViewController {
     
     presentViewController(resultController, animated: true, completion: nil)
   }
-  
+
+  @IBAction func selectPaper(sender: UIButton) {
+    performSegueWithIdentifier("playPaper", sender: self)
+  }
+    
   @IBAction func selectScissors(sender: UIButton) {
     
   }
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let vc = segue.destinationViewController as! ResultViewController
+    vc.deviceSelection = randomSelection()
+    if segue.identifier == "playPaper" {
+          vc.userSelection = RPSType.Paper
+    }
   
-  @IBAction func selectPaper(sender: UIButton) {
-    println("Wert : \(randomSelection())")
-  }
+
 }
 
