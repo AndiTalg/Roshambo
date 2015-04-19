@@ -41,7 +41,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectScissors:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CW7-gh-lsP"/>
+                                    <segue destination="Wdj-34-BZ4" kind="show" identifier="playScissors" id="T1R-cm-qfc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's play!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-YR-DAp">
@@ -108,4 +108,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="T1R-cm-qfc"/>
+    </inferredMetricsTieBreakers>
 </document>
